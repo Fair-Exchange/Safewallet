@@ -8,8 +8,8 @@ QTabWidget QTabBar::tab {
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border: 1px solid #18191a;
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #000000);
+  border: 1px solid #0d2b47;
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #0d2b47);
 }
 
 QTabWidget QTabBar::tab:selected {
@@ -54,7 +54,7 @@ QHeaderView::section:last {
 }
 
 QScrollArea {
-  background: transparent;
+  background: #0d2b47;
   border: 0px;
 }
 
@@ -65,7 +65,7 @@ QTableView {
 
 QTableView::item {
   /* Table Item */
-  background-color: #000;
+  background-color: #0d2b47;
   border: 1px solid #fff;
   font-size: 12px;
 }
@@ -77,15 +77,15 @@ QTableView::item:selected {
 }
 
 QMenuBar {
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #000);
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #0d2b47);
   color: #fff;
 }
 
 QMenuBar::item {
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #000);
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #0d2b47);
   color: #fff;
 }
 
 QMenuBar::item:selected {
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #000);
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #6c7380, stop: 1 #0d2b47);
 }
