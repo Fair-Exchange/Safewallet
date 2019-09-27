@@ -339,10 +339,6 @@
           <property name="text">
            <string>fallen</string>
           </property>
-          <property name="icon">
-           <iconset>
-            <normaloff>:/images/blue/res/images/blue/checked.png</normaloff>:/images/blue/res//images/blue/checked.png</iconset>
-          </property>
          </item>
         </widget>
        </item>
