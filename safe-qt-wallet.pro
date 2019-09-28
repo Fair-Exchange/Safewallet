@@ -132,7 +132,7 @@ win32: RC_ICONS = res/icon.ico
 ICON = res/logo.icns
 
 libsodium.target = $$PWD/res/libsodium.a
-libsodium.commands = res/libsodium/buildlibsodium.sh
+libsodium.commands = cd $$_PRO_FILE_PWD_ && res/libsodium/buildlibsodium.sh
 
 QMAKE_EXTRA_TARGETS += libsodium
 QMAKE_CLEAN += res/libsodium.a
