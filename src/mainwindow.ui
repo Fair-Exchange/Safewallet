@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>550</width>
-    <height>600</height>
+    <width>637</width>
+    <height>745</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -322,6 +322,9 @@
                <property name="cornerButtonEnabled">
                 <bool>false</bool>
                </property>
+               <attribute name="horizontalHeaderCascadingSectionResizes">
+                <bool>false</bool>
+               </attribute>
                <attribute name="horizontalHeaderStretchLastSection">
                 <bool>true</bool>
                </attribute>
@@ -454,8 +457,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>504</width>
-                <height>329</height>
+                <width>589</width>
+                <height>438</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="sendToLayout">
@@ -959,7 +962,7 @@
               </item>
              </layout>
             </item>
-            <item>
+            <item alignment="Qt::AlignTop">
              <widget class="QRCodeLabel" name="qrcodeDisplay">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -967,11 +970,20 @@
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
               <property name="styleSheet">
                <string notr="true">background-color: #fff</string>
               </property>
               <property name="text">
                <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -2136,7 +2148,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>550</width>
+     <width>637</width>
      <height>21</height>
     </rect>
    </property>
