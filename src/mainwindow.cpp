@@ -50,6 +50,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	    
     ui->setupUi(this);
+    // ui->tabWidget->setAttribute(Qt::WA_TranslucentBackground);
+    //ui->tabWidget->setWindowFlags(Qt::FramelessWindowHint);
+
     logger = new Logger(this, QDir(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)).filePath("safe-qt-wallet.log"));
 
     // Status Bar
@@ -501,6 +504,13 @@ void MainWindow::setupSettingsModal() {
         QDialog settingsDialog(this);
         Ui_Settings settings;
         settings.setupUi(&settingsDialog);
+
+        /*
+        settingsDialog.setAttribute(Qt::WA_TranslucentBackground);
+        settings.tabWidget->setAttribute(Qt::WA_TranslucentBackground);
+        settings.tab_2->setAttribute(Qt::WA_TranslucentBackground);
+        */
+
         Settings::saveRestore(&settingsDialog);
 
         // Setup save sent check box
